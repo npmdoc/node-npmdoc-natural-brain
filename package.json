@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"natural-brain",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "natural-brain",
+    "description": "api documentation for [natural-brain (v0.2.3)](https://github.com/mysamai/natural-brain) [![npm package](https://img.shields.io/npm/v/npmdoc-natural-brain.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-natural-brain) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-natural-brain.svg)](https://travis-ci.org/npmdoc/node-npmdoc-natural-brain)",
     "devDependencies": {
-        "natural-brain": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "natural-brain": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-natural-brain",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-natural-brain",
+    "keywords": [
+        "documentation",
+        "natural-brain"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_natural_brain.js",
+    "name": "npmdoc-natural-brain",
+    "nameAlias": "npmdoc_natural_brain",
+    "nameOriginal": "npmdoc-natural-brain",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-natural-brain"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
