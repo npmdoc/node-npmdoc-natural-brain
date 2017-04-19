@@ -1,9 +1,14 @@
-# api documentation for  [natural-brain (v0.2.3)](https://github.com/mysamai/natural-brain)  [![npm package](https://img.shields.io/npm/v/npmdoc-natural-brain.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-natural-brain) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-natural-brain.svg)](https://travis-ci.org/npmdoc/node-npmdoc-natural-brain)
+# npmdoc-natural-brain
+
+#### api documentation for  [natural-brain (v0.2.3)](https://github.com/mysamai/natural-brain)  [![npm package](https://img.shields.io/npm/v/npmdoc-natural-brain.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-natural-brain) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-natural-brain.svg)](https://travis-ci.org/npmdoc/node-npmdoc-natural-brain)
+
 #### A BrainJS neural network natural language classifier
 
-[![NPM](https://nodei.co/npm/natural-brain.png?downloads=true)](https://www.npmjs.com/package/natural-brain)
+[![NPM](https://nodei.co/npm/natural-brain.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/natural-brain)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-natural-brain/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-natural-brain_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-natural-brain/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-natural-brain/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-natural-brain/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-natural-brain/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-natural-brain/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-natural-brain/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "David Luecke",
-        "email": "daff@neyeon.com",
         "url": "https://feathersjs.com"
     },
     "bugs": {
@@ -59,13 +63,11 @@
     "main": "lib/",
     "maintainers": [
         {
-            "name": "daffl",
-            "email": "daff@neyeon.de"
+            "name": "daffl"
         }
     ],
     "name": "natural-brain",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/mysamai/natural-brain.git"
@@ -86,83 +88,6 @@
     },
     "version": "0.2.3"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module natural-brain](#apidoc.module.natural-brain)
-1.  [function <span class="apidocSignatureSpan">natural-brain.</span>disableStopWords ()](#apidoc.element.natural-brain.disableStopWords)
-1.  [function <span class="apidocSignatureSpan">natural-brain.</span>enableStopWords ()](#apidoc.element.natural-brain.enableStopWords)
-1.  [function <span class="apidocSignatureSpan">natural-brain.</span>load (filename, stemmer, callback)](#apidoc.element.natural-brain.load)
-1.  [function <span class="apidocSignatureSpan">natural-brain.</span>restore (data, stemmer)](#apidoc.element.natural-brain.restore)
-1.  object <span class="apidocSignatureSpan">natural-brain.</span>stopwords
-
-
-
-# <a name="apidoc.module.natural-brain"></a>[module natural-brain](#apidoc.module.natural-brain)
-
-#### <a name="apidoc.element.natural-brain.disableStopWords"></a>[function <span class="apidocSignatureSpan">natural-brain.</span>disableStopWords ()](#apidoc.element.natural-brain.disableStopWords)
-- description and source-code
-```javascript
-disableStopWords = function () {
-  _stopwords2.default.words.splice(0, _stopwords2.default.words.length);
-  return stopwordsBackup;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.natural-brain.enableStopWords"></a>[function <span class="apidocSignatureSpan">natural-brain.</span>enableStopWords ()](#apidoc.element.natural-brain.enableStopWords)
-- description and source-code
-```javascript
-enableStopWords = function () {
-  if (!_stopwords2.default.length) {
-    _stopwords2.default.words.push.apply(_stopwords2.default.words, stopwordsBackup);
-  }
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.natural-brain.load"></a>[function <span class="apidocSignatureSpan">natural-brain.</span>load (filename, stemmer, callback)](#apidoc.element.natural-brain.load)
-- description and source-code
-```javascript
-load = function (filename, stemmer, callback) {
-  _classifier2.default.load(filename, function (err, classifier) {
-    if (err) {
-      callback(err);
-    }
-    callback(err, BrainJSClassifier.restore(classifier, stemmer));
-  });
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.natural-brain.restore"></a>[function <span class="apidocSignatureSpan">natural-brain.</span>restore (data, stemmer)](#apidoc.element.natural-brain.restore)
-- description and source-code
-```javascript
-restore = function (data, stemmer) {
-  var result = new BrainJSClassifier({}, stemmer);
-
-  result.classifier.brain.fromJSON(data.classifier.brain);
-  result.docs = data.docs;
-  result.features = data.features;
-
-  return result;
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
