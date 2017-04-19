@@ -1,26 +1,28 @@
-<svg height="366" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="366" fill="#555" width="720"></rect>
+<svg height="398" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="398" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">10 megabytes</tspan>
-<tspan x="10" y="42">└─┬ natural-brain@0.2.3 </tspan>
-<tspan x="10" y="58">  ├─┬ brain.js@0.7.0 </tspan>
-<tspan x="10" y="74">  │ ├── inherits@2.0.3 </tspan>
-<tspan x="10" y="90">  │ └── underscore@1.8.3 </tspan>
-<tspan x="10" y="106">  ├─┬ debug@2.6.3 </tspan>
-<tspan x="10" y="122">  │ └── ms@0.7.2 </tspan>
-<tspan x="10" y="138">  └─┬ natural@0.4.0 </tspan>
-<tspan x="10" y="154">    ├── apparatus@0.0.9 </tspan>
-<tspan x="10" y="170">    ├─┬ log4js@1.1.1 </tspan>
-<tspan x="10" y="186">    │ ├── semver@5.3.0 </tspan>
-<tspan x="10" y="202">    │ └─┬ streamroller@0.4.0 </tspan>
-<tspan x="10" y="218">    │   ├── date-format@0.0.0 </tspan>
-<tspan x="10" y="234">    │   ├── debug@0.7.4 </tspan>
-<tspan x="10" y="250">    │   ├─┬ mkdirp@0.5.1 </tspan>
-<tspan x="10" y="266">    │   │ └── minimist@0.0.8 </tspan>
-<tspan x="10" y="282">    │   └─┬ readable-stream@1.1.14 </tspan>
-<tspan x="10" y="298">    │     ├── core-util-is@1.0.2 </tspan>
-<tspan x="10" y="314">    │     ├── isarray@0.0.1 </tspan>
-<tspan x="10" y="330">    │     └── string_decoder@0.10.31 </tspan>
-<tspan x="10" y="346">    └── sylvester@0.0.21</tspan>
+<tspan x="10" y="26">10 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ natural-brain@0.2.3 </tspan>
+<tspan x="10" y="90">  ├─┬ brain.js@0.7.0 </tspan>
+<tspan x="10" y="106">  │ ├── inherits@2.0.3 </tspan>
+<tspan x="10" y="122">  │ └── underscore@1.8.3 </tspan>
+<tspan x="10" y="138">  ├─┬ debug@2.6.3 </tspan>
+<tspan x="10" y="154">  │ └── ms@0.7.2 </tspan>
+<tspan x="10" y="170">  └─┬ natural@0.4.0 </tspan>
+<tspan x="10" y="186">    ├── apparatus@0.0.9 </tspan>
+<tspan x="10" y="202">    ├─┬ log4js@1.1.1 </tspan>
+<tspan x="10" y="218">    │ ├── semver@5.3.0 </tspan>
+<tspan x="10" y="234">    │ └─┬ streamroller@0.4.0 </tspan>
+<tspan x="10" y="250">    │   ├── date-format@0.0.0 </tspan>
+<tspan x="10" y="266">    │   ├── debug@0.7.4 </tspan>
+<tspan x="10" y="282">    │   ├─┬ mkdirp@0.5.1 </tspan>
+<tspan x="10" y="298">    │   │ └── minimist@0.0.8 </tspan>
+<tspan x="10" y="314">    │   └─┬ readable-stream@1.1.14 </tspan>
+<tspan x="10" y="330">    │     ├── core-util-is@1.0.2 </tspan>
+<tspan x="10" y="346">    │     ├── isarray@0.0.1 </tspan>
+<tspan x="10" y="362">    │     └── string_decoder@0.10.31 </tspan>
+<tspan x="10" y="378">    └── sylvester@0.0.21</tspan>
 </text>
 </svg>
