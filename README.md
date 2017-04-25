@@ -1,6 +1,6 @@
 # npmdoc-natural-brain
 
-#### api documentation for  [natural-brain (v0.2.3)](https://github.com/mysamai/natural-brain)  [![npm package](https://img.shields.io/npm/v/npmdoc-natural-brain.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-natural-brain) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-natural-brain.svg)](https://travis-ci.org/npmdoc/node-npmdoc-natural-brain)
+#### basic api documentation for  [natural-brain (v0.2.3)](https://github.com/mysamai/natural-brain)  [![npm package](https://img.shields.io/npm/v/npmdoc-natural-brain.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-natural-brain) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-natural-brain.svg)](https://travis-ci.org/npmdoc/node-npmdoc-natural-brain)
 
 #### A BrainJS neural network natural language classifier
 
@@ -86,7 +86,8 @@
         "test": "npm run compile && npm run jshint && npm run mocha",
         "watch": "babel --watch -d lib/ src/"
     },
-    "version": "0.2.3"
+    "version": "0.2.3",
+    "bin": {}
 }
 ```
 
